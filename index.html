@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+  <!-- Compiled Fontawesome Icons-->
+  <script
+  src="https://kit.fontawesome.com/a2442a0283.js"
+  crossorigin="anonymous"
+></script>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artium</title>
+</head>
+
+<body id="home" class="scrollspy">
+  <header class="main-header">
+    <div class="primary-overlay">
+      <div class="navbar-fixed">
+        <nav class="transparent">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="#home" class="brand-logo">Artium</a>
+              <a href="#" data-activates="mobile-nav" class="button-collapse">
+                <i class="material-icons">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down">
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="shop.html">Shop</a>
+                </li>
+                <li>
+                  <a href="event.html">Events</a>
+                </li>
+                <li>
+                  <a href="news.html">News</a>
+                </li>
+                <li>
+                    <a
+                      class="btn btn-small blue darken-3 waves-light 
+                            waves-effect modal-trigger"
+                      data-target="modal1"
+                      >Login</a
+                    >
+                  </li> 
+                  <li class="waves-light waves-effect">
+                    <a href="http://facebook.com"
+                      ><i
+                        class="fab fa-facebook-square tiny blue-text text-accent-2"
+                      ></i
+                    ></a>
+                  </li>
+                  <li class="waves-light waves-effect">
+                    <a href="http://twitter.com"
+                      ><i
+                        class="fab fa-twitter-square tiny blue-text text-accent-2"
+                      ></i
+                    ></a>
+                  </li>
+                <!-- <li>
+                  <a href="#" class="btn blue">Inspirational Thoughts</a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Side nav -->
+      <ul class="side-nav" id="mobile-nav">
+        <h4 class="blue-grey darken-3 center">Artium</h4>
+        <li>
+          <a class="divider"></a>
+        </li>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="shop.html">Shop</a>
+        </li>
+        <li>
+          <a href="event.html">Events</a>
+        </li>
+        <li>
+          <a href="news.html">News</a>
+        </li>
+        <div class="divider"></div>
+      <li>
+        <a
+          class="btn blue darken-3 waves-light waves-effect modal-trigger"
+          data-target="modal1"
+          >Login</a
+        >
+      </li>
+
+      <li class="center">
+        <span class="black-text">  Or login using :</span>
+        <a href="http://facebook.com"
+          ><i class="fab fa-facebook-square small blue-text text-accent-2"></i
+          >Facebook</a
+        >
+
+        <a href="http://twitter.com"
+          ><i class="fab fa-twitter-square small blue-text text-accent-2"></i
+          >Twitter</a
+        >
+      </li>
+      </ul>
+
+      <!-- MODAL -->
+    <div class="modal" id="modal1">
+        <div class="row">
+          <div class="modal-content">
+              <ul class="collapsible" data-collapsible="accordion">
+                  <li>
+                    <div class="collapsible-header active black-text" >
+                      <i class="material-icons">group_work</i>Login
+                    </div>
+                    <div class="collapsible-body white">
+                      <form action="dashboard.html">
+                        <div class="input-field"><input type="text" name="" id="username">
+                        <label for="username">Username</label></div>
+                        <div class="input-field"><input type="password" name="" id="password">
+                        <label for="password">Password</label></div>
+                        <div class="input-field"><input type="submit" 
+                          value="Login" id="submit" 
+                          class="btn right blue darken-3 waves-effect waves-light"></div>
+                      </form>
+                      <br>
+                    </div>
+                  </li>
+                  <li>
+                    <li>
+                      <div class="collapsible-header black-text">
+                        <i class="material-icons">input</i>
+                        Register
+                      </div>
+                      <div class="collapsible-body white">
+                        <form >
+                            <div class="input-field"><input type="text" name="" id="username">
+                              <label for="username">Username</label></div>
+                              <div class="input-field"><input type="password" name="" id="password">
+                              <label for="password">New Password</label></div>
+                              <div class="input-field"><input type="password" name="" id="password">
+                              <label for="password">Confirm Password</label></div>
+        
+                              <div class="input-field"><input type="email" name="" id="email">
+                              <label for="email">Email</label></div>
+                              <div class="input-field"><input type="text" name="" id="phone">
+                              <label for="phone">Phone</label></div>
+                              <div class="input-field"><input type="submit" 
+                                value="Register" id="submit" 
+                                class="btn right blue darken-3 waves-effect waves-light"></div>
+                        </form>
+                        <br>
+                      </div>
+                    </li>
+          </div>
+        </div>
+      </div>
+
+    <!-- carousel -->
+<div class="container">
+  <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="img/picture1 (1).png"></a>
+    <a class="carousel-item" href="#two!"><img src="img/picture2.png"></a>
+    <a class="carousel-item" href="#three!"><img src="img/picture3.png"></a>
+    <a class="carousel-item" href="#four!"><img src="img/picture4.png"></a>
+    <a class="carousel-item" href="#five!"><img src="img/picture5.png"></a>
+  </div>
+  </div>
+
+  
+      <!-- <i class="material-icons">menu</i></a>
+      <ul>
+        <li><a href="#post-modal" class="modal-trigger btn-floating blue">
+          <i class="material-icons">folder</i>Events</a></li>
+        <li><a href="#post-modal" class="modal-trigger btn-floating blue">
+          <i class="material-icons">folder</i></a></li>
+        <li><a href="#post-modal" class="modal-trigger btn-floating blue">
+          <i class="material-icons">supervisor_account</i></a></li>
+      </ul>
+    </div>
+    <h2 class="center">Find Awesome Art</h2>
+      <i class="material-icons medium scroll-icon">arrow_drop_down_circle</i>
+  </div> --> 
+</header>
+
+
+  <!-- SECTION : INSPIRATIONAL THOUGHTS-->
+  <div class="row center section-inspi" style="padding-top: 20px">
+      <a href="#!" 
+  class="btn blue waves-effect waves-light center"
+  onclick="$('.tap-target').tapTarget('open')">Inspirational Thoughts</a>
+  <br><br>
+  </div>
+
+   <!-- Fixed Action Button -->
+   <div class="fixed-action-btn">
+     <a class="btn-floating btn blue" id="menu">
+       <i class="material-icons">menu</i>
+      </a>
+      <div class="tap-target-wrapper">
+        <div class="tap-target blue" data-activates="menu">
+          <div class="tap-target-content grey-text">
+            <h5>Inspirational Thoughts</h5>
+            <p class="yellow-text">Lorem ipsum dolor sit amet consectetur 
+              adipisicing elit. Exercitationem, culpa similique numquam soluta 
+              ullam deserunt perspiciatis maxime distinctio tempore! Odit.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- SECTION: SHOP & EVENTS-->
+    
+          <div class="container section-shop grey lighten-2">
+            <div class="row">
+              <div class="col s12 m6">
+                <div class="card transparent z-depth-5 center" 
+                style="padding-top:10px;">
+                    <h5 class="white-text"> Want to buy the newest and latest form of Art?</h5>
+                      <br>
+                      <a href="shop.html" class="btn btn-medium blue"> Go to Shop</a>
+                      <br><br>
+                </div>
+                
+              </div>
+              <div class="col s12 m6">
+                  <div class="card transparent z-depth-5 center" style="padding-top:10px">
+                      <h5 class="white-text"> Want to know the art events around the World?</h5>
+                        <br>
+                        <a href="event.html" class="btn btn-medium blue"> Go to Events</a>
+                        <br><br>
+                  </div>
+              </div>
+            </div>
+          </div>
+     
+    <!-- Contacts -->
+        <!-- <div class="col s12 m6">
+          <div class="card-panel z-depth-5">
+            <h4>Contact Us</h4>
+            <div class="input-field">
+              <input type="text" id="name" placeholder="Name">
+              <label for="name">Name</label>
+            </div>
+            <div class="input-field">
+              <input type="email" id="email" placeholder="Email">
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="phone" placeholder="Phone Number">
+              <label for="phone">Phone</label>
+            </div>
+            <div class="input-field">
+              <textarea class="materialize-textarea" id="message" placeholder="Message"></textarea>
+              <label for="message">Message</label>
+            </div>
+            <input type="submit" value="Submit" class="btn blue-grey">
+          </div>
+        </div>
+       -->
+  </section>
+
+
+
+
+  
+  <!-- Footer -->
+  <footer class="section blue-grey darken-4 white-text center">
+      <p>Artium Copyright &copy; 2019</p>
+    </footer>
+
+  
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!-- <script src="http://maps.googoleapis.com/maps/api/js"></script> -->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDZLdgXq1UDvvmTW0yemWzid-fhHTmbVc"></script> -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDZLdgXq1UDvvmTW0yemWzid-fhHTmbVc"></script>
+
+  <script>
+    $(document).ready(function () {
+      // Init Sidenav
+      $('.button-collapse').sideNav();
+
+      // INIT MODAL
+      $('.modal').modal();
+      //carousel
+      $('.carousel').carousel();
+
+     // CALENDAR
+       let myCalendar = new VanillaCalendar({
+                selector: "#myCalendar"
+            });
+
+       //Show sections
+       $('.section').fadeIn();
+
+       //Hide Preloader
+       $('.loader').fadeOut();
+
+      // Init Scrollspy
+      $('.scrollspy').scrollSpy();
+
+      // ScrollFire
+      const options = [
+        {
+          selector: '.main-text', offset: 0, callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: '.navbar-fixed', offset: 1500, callback: function () {
+            $('nav').removeClass('transparent');
+            $('nav').addClass('blue-grey darken-3');
+          }
+        }
+      ];
+
+
+    });
+  </script>
+</body>
+
+</html>
