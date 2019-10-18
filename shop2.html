@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link type="text/css" rel="stylesheet" href="css/main2.css" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Compiled Fontawesome Icons-->
+    <script
+      src="https://kit.fontawesome.com/a2442a0283.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Website Name</title>
+  </head>
+  <body>
+    <!-- MAIN HEADER NAVBAR -->
+    <header>
+      <nav class="grey darken-2">
+        <div class="row">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a
+                href="index.html"
+                class="brand-logo blue-text text-accent-2"
+                id="title-brand"
+                >Website</a
+              >
+              <a href="#" data-activates="mobile-nav" class="button-collapse">
+                <i class="material-icons">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li class="active-link black"><a href="shop.html" class="blue-text text-accent-2">Shop</a></li>
+                <li><a href="event.html">Events</a></li>
+                <li><a href="news.html">News</a></li>
+                <li class="waves-effect waves-light">
+                    <a href="#!" class="dropdown-trigger" data-target="person-dropdown">
+                  <i class="material-icons">person</i>
+                    </a>
+                </li> 
+                <li class="waves-effect waves-light"  >
+                    <a href="#!" class="dropdown-trigger" data-target="shop-basket">
+                  <i class="material-icons">shopping_basket</i>
+                    </a>
+                </li> 
+                <li class="waves-light waves-effect">
+                  <a href="http://facebook.com"
+                    ><i
+                      class="fab fa-facebook-square tiny blue-text text-accent-2"
+                    ></i
+                  ></a>
+                </li>
+                <li class="waves-light waves-effect">
+                  <a href="http://twitter.com"
+                    ><i
+                      class="fab fa-twitter-square tiny blue-text text-accent-2"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- SIDE NAV -->
+    <ul class="side-nav" id="mobile-nav">
+    <li class="grey center" style="padding-top: 10px">
+        <img src="img/bg-blossom.jpg" alt="" class="circle responsive-img" style="height: 50px; width: 50px;">
+        <h6>Jan Louie Lineses</h6>
+        <h6>luminariumdraise@gmail</h6>
+      
+    </li>
+      <div class="divider"></div> 
+      <li><a href="index.html" class=""><i class="material-icons">home</i>Home</a></li>
+      <li><a href="shop.html"><i class="material-icons">shopping_cart</i>Shop</a></li>
+      <li><a href="event.html" class=""><i class="material-icons">event</i>Events</a></li>
+      <li><a href="news.html" class=""><i class="material-icons">mail</i>News</a></li>
+      <div class="divider"></div>
+      <li><a href="#!" class="subheader">Account Controls</a></li>
+      <li><a href="#!" ><i class="material-icons">shopping_basket</i>Cart</a></li>
+      <li>
+        <a 
+          class="btn blue darken-3 waves-light waves-effect modal-trigger"
+          data-target="modal1"
+          >Logout</a
+        >
+      </li>
+    </ul>
+
+    <!-- DROPDOWN CONTENT-->
+    <ul id="person-dropdown" class="dropdown-content">
+        <li>
+            <a href="#!">Account Controls
+                </a
+            >
+        </li>
+        <li>
+            <a href="#!">Settings</a>
+        </li>
+        <li><a href="index.html" class="btn">Logout</a></li>
+    </ul>
+    
+    <ul id="shop-basket" class="dropdown-content">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal1">
+            <div class="row">
+              <div class="modal-content">
+                  <ul class="collapsible" data-collapsible="accordion">
+                      <li>
+                        <div class="collapsible-header active" >
+                          <i class="material-icons">group_work</i>Login
+                        </div>
+                        <div class="collapsible-body white">
+                          <form action="dashboard.html">
+                            <div class="input-field"><input type="text" name="" id="username">
+                            <label for="username">Username</label></div>
+                            <div class="input-field"><input type="password" name="" id="password">
+                            <label for="password">Password</label></div>
+                            <div class="input-field"><input type="submit" 
+                              value="Login" id="submit" 
+                              class="btn right blue darken-3 waves-effect waves-light"></div>
+                          </form>
+                          <br>
+                        </div>
+                      </li>
+                      <li>
+                        <li>
+                          <div class="collapsible-header">
+                            <i class="material-icons">input</i>
+                            Register
+                          </div>
+                          <div class="collapsible-body white">
+                            <form >
+                                <div class="input-field"><input type="text" name="" id="username">
+                                  <label for="username">Username</label></div>
+                                  <div class="input-field"><input type="password" name="" id="password">
+                                  <label for="password">New Password</label></div>
+                                  <div class="input-field"><input type="password" name="" id="password">
+                                  <label for="password">Confirm Password</label></div>
+            
+                                  <div class="input-field"><input type="email" name="" id="email">
+                                  <label for="email">Email</label></div>
+                                  <div class="input-field"><input type="text" name="" id="phone">
+                                  <label for="phone">Phone</label></div>
+                                  <div class="input-field"><input type="submit" 
+                                    value="Register" id="submit" 
+                                    class="btn right blue darken-3 waves-effect waves-light"></div>
+                            </form>
+                            <br>
+                          </div>
+                        </li>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION: SHOP-->
+              <div class="row" id="section-shop">
+                  <div class="col s12 m2" id="side-bar">
+                      <ul class="">
+                        <h5 class="white-text">Sort By:</h5>
+                          <li><a href="#!">New</a></li>
+                          <li><a href="#!">Trending</a></li>
+                          <li><a href="#!">Hot</a></li>
+                      </ul>
+                      <div class="divider"></div>
+                      <h5 class="white-text">Category:</h5>
+                      <ul class="">
+                          <li><a href="#!">Animation Art</a></li>
+                          <li><a href="#!">Architecture</a></li>
+                          <li><a href="#!">Art Brut</a></li>
+                          <li><a href="#!">Assemblage Art</a></li>
+                          <li><a href="#!">Calligraphy</a></li>
+                          <li><a href="#!">Ceramics</a></li>
+                          <li><a href="#!">Collage</a></li>
+                          <li><a href="#!">Folk Art</a></li>
+                          <li><a href="#!">Graffiti Art</a></li>
+                          <li><a href="#!">Mosaic</a></li>
+                          <li><a href="#!">Painting</a></li>
+                          <li><a href="#!">Photography</a></li>
+                          <li><a href="#!">Sculpture</a></li>
+                          <li><a href="#!">Tapestry Art</a></li>
+                          <li><a href="#!">Tapestry Art</a></li>
+                      </ul>
+                      <div class="divider"></div>
+                      <h5 class="white-text">Genres:</h5>
+                      <ul>
+                        <li><a href="#!">Abstract Art</a></li>
+                        <li><a href="#!">Representational Art</a></li>
+                        <li><a href="#!">Figurative Art</a></li>
+                        <li><a href="#!">History Painting</a></li>
+                        <li><a href="#!">Portrait Art</a></li>
+                        <li><a href="#!">Landscape Painting</a></li>
+                        <li><a href="#!">Still Life Painting</a></li>
+                      </ul>
+                  </div>
+                  <div class="col s12 m10">
+                    <div id="shop-header">
+                        <span class="white-text">Search Item:</span> 
+                          <div class="input-field inline">
+                              <input type="text" name="search" id="search">
+                              <label for="search" class="white-text">Search</label>
+                            </div>
+                            <a href="#" class="btn blue lighten-2 waves-effect waves-light">
+                                <i class="material-icons">search</i>
+                            </a>
+                            <div class="right">
+                              <ul>
+                                <li class="">
+                                    <a href="#" class="  
+                                    grey-text text-lighten-2 waves-effect"><i class="fa-2x material-icons">view_list</i> </a>
+                                    <a href="#" class="  
+                                    grey-text text-lighten-2 waves-effect"><i class="fa-2x material-icons">view_module</i> </a>
+                                    <a href="#" class="  
+                                    grey-text text-lighten-2 waves-effect"><i class="fa-2x material-icons">view_comfy</i> </a>
+                                </li>
+                              </ul>
+                            </div>
+                    </div>
+                    <div id="shop-body ">
+                        <div class="col 12 m4">
+                          <div class="card">
+                              <div class="card-image">
+                                <img src="/Creative Web Project/img/resul-DbwYNr8RPbg-unsplash.jpg"
+                                 alt="" class="responsive-img materialboxed" 
+                                 style="height: 200px; background-size: cover; background-position: center;">
+                              
+                              <a href="" class="btn-floating halfway-fab 
+                              waves-effect waves-light">
+                              <i class="material-icons black blue-text">add_shopping_cart</i>
+                            </a>
+                            </div>
+                            <div class="card-content">
+                              <h6>Sky stream</h6>
+                              <h6>Price: <span class="green-text text-lighten-2">40,000 Php</span></h6>
+                                <h6>
+                              <div class="divider"></div>
+                              <h6>Lorem ipsum dolor sit amet consectetur 
+                                adipisicing elit. Eaque, impedit!</h6>
+                                
+                                    <i class="material-icons yellow-text">star</i>
+                                    <i class="material-icons yellow-text">star</i>
+                                    <i class="material-icons black-text">star</i>
+                                    <i class="material-icons black-text">star</i>
+                                    <i class="material-icons black-text">star</i>
+                                </h6>
+                                <h6>
+                                  <div class="chip">#Painting</div>
+                                  <div class="chip">#Love</div>
+                                  <div class="chip">#Clean</div>
+                                </h6> 
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col 12 m4">
+                            <div class="card">
+                                <div class="card-image">
+                                  <img src="/Creative Web Project/img/wallpaper-art1.jpg"
+                                   alt="" class="responsive-img materialboxed" 
+                                   style="height: 200px; background-size: cover; background-position: center;">
+                                
+                                <a href="" class="btn-floating halfway-fab 
+                                waves-effect waves-light">
+                                <i class="material-icons black blue-text">add_shopping_cart</i>
+                              </a>
+                              </div>
+                              <div class="card-content">
+                                <h6>Desert Field</h6>
+                                <h6>Price: <span class="green-text text-lighten-2">40,000 Php</span></h6>
+                                  <h6>
+                                <div class="divider"></div>
+                                <h6>Lorem ipsum dolor sit amet consectetur 
+                                  adipisicing elit. Eaque, impedit!</h6>
+                                  
+                                      <i class="material-icons yellow-text">star</i>
+                                      <i class="material-icons yellow-text">star</i>
+                                      <i class="material-icons yellow-text">star</i>
+                                      <i class="material-icons yellow-text">star</i>
+                                      <i class="material-icons black-text">star</i>
+                                  </h6>
+                                  <h6>
+                                    <div class="chip">#Painting</div>
+                                    <div class="chip">#Love</div>
+                                    <div class="chip">#Clean</div>
+                                  </h6> 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col 12 m4">
+                              <div class="card">
+                                  <div class="card-image">
+                                    <img src="/Creative Web Project/img/wallpaper-art2.jpg"
+                                     alt="" class="responsive-img materialboxed" 
+                                     style="height: 200px; background-size: cover; background-position: center;">
+                                  
+                                  <a href="" class="btn-floating halfway-fab 
+                                  waves-effect waves-light">
+                                  <i class="material-icons black blue-text">add_shopping_cart</i>
+                                </a>
+                                </div>
+                                <div class="card-content">
+                                  <h6>Parrot</h6>
+                                  <h6>Price: <span class="green-text text-lighten-2">40,000 Php</span></h6>
+                                    <h6>
+                                  <div class="divider"></div>
+                                  <h6>Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Eaque, impedit!</h6>
+                                    
+                                        <i class="material-icons yellow-text">star</i>
+                                        <i class="material-icons yellow-text">star</i>
+                                        <i class="material-icons yellow-text">star</i>
+                                        <i class="material-icons yellow-text">star</i>
+                                        <i class="material-icons yellow-text">star</i>
+                                    </h6>
+                                    <h6>
+                                      <div class="chip">#Painting</div>
+                                      <div class="chip">#Love</div>
+                                      <div class="chip">#Clean</div>
+                                    </h6> 
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col 12 m4">
+                                <div class="card">
+                                    <div class="card-image">
+                                      <img src="/Creative Web Project/img/wallpaper-art3.jpg"
+                                       alt="" class="responsive-img materialboxed" 
+                                       style="height: 200px; background-size: cover; background-position: center;">
+                                    
+                                    <a href="" class="btn-floating halfway-fab 
+                                    waves-effect waves-light">
+                                    <i class="material-icons black blue-text">add_shopping_cart</i>
+                                  </a>
+                                  </div>
+                                  <div class="card-content">
+                                    <h6>Drive Back</h6>
+                                    <h6>Price: <span class="green-text text-lighten-2">40,000 Php</span></h6>
+                                      <h6>
+                                    <div class="divider"></div>
+                                    <h6>Lorem ipsum dolor sit amet consectetur 
+                                      adipisicing elit. Eaque, impedit!</h6>
+                                      
+                                          <i class="material-icons yellow-text">star</i>
+                                          <i class="material-icons yellow-text">star</i>
+                                          <i class="material-icons yellow-text">star</i>
+                                          <i class="material-icons yellow-text">star</i>
+                                          <i class="material-icons black-text">star</i>
+                                      </h6>
+                                      <h6>
+                                        <div class="chip">#Painting</div>
+                                        <div class="chip">#Love</div>
+                                        <div class="chip">#Clean</div>
+                                      </h6> 
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col 12 m4">
+                                  <div class="card">
+                                      <div class="card-image">
+                                        <img src="/Creative Web Project/img/wallpaper-art4.jpg"
+                                         alt="" class="responsive-img materialboxed" 
+                                         style="height: 200px; background-size: cover; background-position: center;">
+                                      
+                                      <a href="" class="btn-floating halfway-fab 
+                                      waves-effect waves-light">
+                                      <i class="material-icons black blue-text">add_shopping_cart</i>
+                                    </a>
+                                    </div>
+                                    <div class="card-content">
+                                      <h6>Under the Bridge</h6>
+                                      <h6>Price: <span class="green-text text-lighten-2">40,000 Php</span></h6>
+                                        <h6>
+                                      <div class="divider"></div>
+                                      <h6>Lorem ipsum dolor sit amet consectetur 
+                                        adipisicing elit. Eaque, impedit!</h6>
+                                        
+                                            <i class="material-icons yellow-text">star</i>
+                                            <i class="material-icons yellow-text">star</i>
+                                            <i class="material-icons yellow-text">star</i>
+                                            <i class="material-icons black-text">star</i>
+                                            <i class="material-icons black-text">star</i>
+                                        </h6>
+                                        <h6>
+                                          <div class="chip">#Painting</div>
+                                          <div class="chip">#Love</div>
+                                          <div class="chip">#Clean</div>
+                                        </h6> 
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col 12 m4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                          <img src="/Creative Web Project/img/wallpaper-art5.jpg"
+                                           alt="" class="responsive-img materialboxed" 
+                                           style="height: 200px; background-size: cover; background-position: center;">
+                                        
+                                        <a href="" class="btn-floating halfway-fab 
+                                        waves-effect waves-light">
+                                        <i class="material-icons black blue-text">add_shopping_cart</i>
+                                      </a>
+                                      </div>
+                                      <div class="card-content">
+                                        <h6>Sunset</h6>
+                                        <h6>Price: <span class="green-text text-lighten-2">40,000 Php</span></h6>
+                                          <h6>
+                                        <div class="divider"></div>
+                                        <h6>Lorem ipsum dolor sit amet consectetur 
+                                          adipisicing elit. Eaque, impedit!</h6>
+                                          
+                                              <i class="material-icons yellow-text">star</i>
+                                              <i class="material-icons yellow-text">star</i>
+                                              <i class="material-icons yellow-text">star</i>
+                                              <i class="material-icons black-text">star</i>
+                                              <i class="material-icons black-text">star</i>
+                                          </h6>
+                                          <h6>
+                                            <div class="chip">#Painting</div>
+                                            <div class="chip">#Love</div>
+                                            <div class="chip">#Clean</div>
+                                          </h6> 
+                                      </div>
+                                    </div>
+                                  </div>
+                    </div> 
+                    <div class="shop-footer"> 
+                      <ul class="pagination">
+                          <li class="disabled">
+                              <a href="#!" class="blue-text">
+                                  <i class="material-icons">chevron_left</i>
+                              </a>
+                          </li>
+                          <li class="active blue lighten-2">
+                              <a href="#!" class="white-text">1</a>
+                          </li>
+                          <li class="">
+                              <a href="#!" class="grey-text text-lighten-2">2</a>
+                          </li>
+                          <li class="">
+                              <a href="#!" class="grey-text text-lighten-2">3</a>
+                          </li>
+                          <li class="">
+                              <a href="#!" class="grey-text text-lighten-2">4</a>
+                          </li>
+                          <li class="">
+                              <a href="#!" class="grey-text text-lighten-2">5</a>
+                          </li>
+                          <li class="">
+                              <a href="#!" class="grey-text text-lighten-2">6</a>
+                          </li>
+                          <li class="">
+                              <a href="#!" class="grey-text text-lighten-2">...</a>
+                          </li>
+                          <li class="waves-effect">
+                              <a href="#!" class="blue-text"
+                              ><i class="material-icons">chevron_right</i></a>
+                          </li>
+                      </ul>
+                      </ul>
+                    </div> 
+                  </div>
+              </div>
+          
+          <!-- FOOTER -->
+          <footer class="page-footer grey darken-2">
+            <div class="row">
+              <div class="col s12 m4">
+                <h5> In Partnership with:</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat maxime 
+                  corporis similique? Nam excepturi distinctio nostrum perferendis, 
+                  eaque consequatur asperiores.</p>
+              </div>
+              <div class="col s12 m4">
+                <h5>Links:</h5>
+                <ul >
+                  <li ><a href="index.html" class="blue-text text-lighten-2">Home</a></li>
+                  <li ><a href="shop.html" class="blue-text text-lighten-2">Shop</a></li>
+                  <li ><a href="event.html" class="blue-text text-lighten-2">Event</a></li>
+                  <li ><a href="news.html" class="blue-text text-lighten-2">News</a></li>
+                </ul>
+              </div>
+              <div class="col s12 m4">
+                <h5>Visit Our Social Media:</h5>
+                  <li class="waves-light waves-effect">
+                    <a href="http://facebook.com"
+                      ><i
+                        class="fab fa-facebook-square medium  blue-text text-darken-2"
+                      ></i
+                    ></a>
+                  </li>
+                  <li class="waves-light waves-effect">
+                    <a href="http://twitter.com"
+                      ><i
+                        class="fab fa-twitter-square medium blue-text text-darken-2"
+                      ></i
+                    ></a>
+              </div>
+            </div>
+            <div class="footer copyright grey darken-4">
+              <div class="container">Website Name &copy; 2019
+              <a href="" class="right white-text">Terms and Condition</a>
+            </div>
+            </div>
+          </footer>
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script>
+      //       // JAVASCRIPT START HERE //
+      $(document).ready(function() {
+        // Init Sidenav
+        $(".button-collapse").sideNav();
+
+        //Dropdown Button
+        $('.dropdown-trigger').dropdown({
+            constrainWidth: false,
+            hover: true,
+            belowOrigin: true,
+            alignment: 'left'
+        });
+        
+        // Carousel Slider
+        $(".carousel.carousel-slider").carousel({ fullWidth: true });
+
+        // Carousel autoplay slider
+        autoplay();
+        function autoplay() {
+          $(".carousel.carousel-slider").carousel("next");
+          setTimeout(autoplay, 4500);
+        }
+
+        // Modal Viewer
+        $(".modal").modal({
+          dismissable: true,
+          inDuration: 300,
+          outDuration: 200,
+          ready: function(modal, trigger) {
+            console.log("Modal Opened", modal, trigger);
+          }
+        });
+
+        
+
+      });
+    </script>
+  </body>
+</html>

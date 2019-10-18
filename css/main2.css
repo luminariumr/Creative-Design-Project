@@ -1,0 +1,44 @@
+body {
+  font-family: "Courier", serif;
+  background: url(../img/wallpaper-horizon.png);
+  background-size: cover;
+  background-position: center;
+  display: block;
+}
+
+#colorHold {
+  background: rgb(31, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(31, 0, 36, 0.7) 0%,
+    rgba(10, 95, 96, 0.7) 24%,
+    rgba(9, 9, 121, 0.7) 49%,
+    rgba(31, 127, 138, 0.7) 74%,
+    rgba(240, 0, 255, 0.7) 100%
+  );
+}
+
+#title-brand {
+  font-family: "Courier", serif;
+  font-style: italic;
+}
+
+.side-nav {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.modal {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.input-field {
+  color: rgb(120, 144, 251);
+}
+
+#side-bar {
+  background: rgba(0, 0, 0, 0.6);
+}
+#carouSlider {
+  background-size: cover;
+  background-position: center;
+}
